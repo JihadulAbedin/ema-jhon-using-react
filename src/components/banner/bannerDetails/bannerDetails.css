@@ -1,0 +1,22 @@
+
+.BannerDetails small{
+    font-size:20px;
+    display:block;
+    color:#FF9900;
+    margin-bottom:61px;
+}
+.BannerDetails h1{
+    font-size:60px;
+    font-weight:bold;
+    color:#1C2B35;
+}
+.BannerDetails p{
+    font-size: 26px;
+}
+.BannerDetails button{
+    margin-top:60px;
+    padding:13px 22px;
+    background-color: #FF9900;
+    outline:none;
+    border:none;
+}

@@ -1,0 +1,11 @@
+.image {
+    width: 451px;
+    height: 633px;
+    box-shadow: -19px 21px 0px #FFE0B3;
+    border-radius:8px;
+}
+
+img {
+    border-radius: 8px;
+    width: 100%;
+}
