@@ -7,7 +7,7 @@ const ShoopItem = (props) => {
         <div className='shopItemWrapper'>
             <div className="singleItemWrapper">
                 <div className="img">
-                    <img src={img} alt="product" />
+                    <img src={img} alt={seller} />
                 </div>
                 <div className="singleItemInfo">
                     <h1>{name}</h1>
@@ -15,7 +15,7 @@ const ShoopItem = (props) => {
                     <p>Manufacturer: {seller}</p>
                     <p>Ratings: {ratings}</p>
                 </div>
-                <button className="addToCartButton">Add to cart</button>
+                <button onClick={props.addToCart} className="addToCartButton">Add to cart</button>
             </div>
         </div>
     );
