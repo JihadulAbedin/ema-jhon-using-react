@@ -5,22 +5,25 @@
 }
 
 .shopItem-wrapper{
-    padding:150px 0;
+    margin:150px 0 0;
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
     gap:45px;
+    height:100vh;
+    overflow-y:scroll;
+    background: #f2be1d0a;
 }
 .order-summery{
     padding-top:150px;
 }
-.order-summery-wrapper{
-    position:static;
-    height:200vh;
+.order-summery-in-page-wrapper{
+    height:100vh;
     background-color: rgba(255, 153, 0, 0.30);
     padding:23px 23px 0 23px;
 }
 
 .order-summery-wrapper h3{
+    padding-top: 30px;
     text-align: center;
     color:#1C2B35;
     font-size:25px;

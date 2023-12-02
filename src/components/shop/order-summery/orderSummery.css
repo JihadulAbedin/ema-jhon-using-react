@@ -1,0 +1,37 @@
+.order-summery-wrapper h3{
+    padding-top: 30px;
+    text-align: center;
+    color:#1C2B35;
+    font-size:25px;
+}
+.summeryReport{
+    margin-top: 50px;
+}
+.summeryReport>ul{
+    list-style: none;
+    padding:0;
+}
+
+.summeryReport>ul li{
+    padding-bottom:25px;
+}
+.summeryReport>ul li:last-child{
+    padding-bottom:57px;
+}
+
+.cartButtons button{
+    display:block;
+    width:100%;
+    text-align: center;
+    padding:14px 0;
+    color:#fff;
+}
+
+#btnClearCart{
+    background-color: #FF3030;;
+}
+
+#btnReviewOrder{
+    background: #F90;
+    margin-top:17px;
+}

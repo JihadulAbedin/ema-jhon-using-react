@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './shopcombiner.css'
 import ShoopItem from '../shop Item/ShoopItem';
+import OrderSummery from '../order-summery/OrderSummery';
 
 const ShopCombiner = () => {
     const [product, setProduct] = useState([]);
@@ -16,7 +17,8 @@ const ShopCombiner = () => {
         const newCartArray = [...cartArray,val]
         setCartArray(newCartArray)
     }
-
+    console.log(cartArray)
+    
     // state for calculation
     const priceArray = []
     cartArray.map((val)=>{
@@ -55,21 +57,14 @@ const ShopCombiner = () => {
                 }
             </div>
             <div className="order-summery">
-                <div className="order-summery-wrapper">
-                    <h3>Order Summery</h3>
-                    <div className="summeryReport">
-                        <ul>
-                            <li>Selected Items: {cartArray.length}</li>
-                            <li>Total Price: ${total}</li>
-                            <li>Total Shopping Charges: ${shipping}</li>
-                            <li>Tax: ${tax}</li>
-                            <li>Grand Total: ${grandTotal}</li>
-                        </ul>
-                    </div>
-                    <div className="cartButtons">
-                        <button onClick={clearItems} id="btnClearCart">Clear Cart</button>
-                        <button id="btnReviewOrder">Review Order</button>
-                    </div>
+                <div className="order-summery-in-page-wrapper">
+                    <OrderSummery 
+                    itemsAmount={cartArray.length} 
+                    total={total} 
+                    shipping={shipping} 
+                    tax={tax} 
+                    grandtotal={grandTotal}
+                    clearItem={clearItems}></OrderSummery>
                 </div>
             </div>
         </div>

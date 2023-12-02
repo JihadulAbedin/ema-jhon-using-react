@@ -1,5 +1,6 @@
 import './shoopitem.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 const ShoopItem = (props) => {
     const { name, price, ratings, img, seller } = props.productObj
 
@@ -15,7 +16,10 @@ const ShoopItem = (props) => {
                     <p>Manufacturer: {seller}</p>
                     <p>Ratings: {ratings}</p>
                 </div>
-                <button onClick={props.addToCart} className="addToCartButton">Add to cart</button>
+                <button onClick={props.addToCart} className="addToCartButton">
+                    Add to cart
+                    <FontAwesomeIcon style={{marginLeft:'8px'}} icon={faShoppingCart} />
+                </button>
             </div>
         </div>
     );
